@@ -179,26 +179,35 @@ export default function App() {
 
 
 {/* THIRD-PARTY RISK MANAGEMENT */}
-<section className="relative py-24 bg-[#F8FAFC] overflow-hidden px-6">
-  {/* Abstract Background Decoration */}
-  <div className="absolute inset-0 z-0 opacity-40 pointer-events-none">
-    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] bg-gradient-to-tr from-blue-50 to-indigo-50 rounded-full blur-3xl"></div>
-    {/* You can add a background grid or SVG pattern here like in your reference */}
-    <div className="absolute inset-0" style={{ backgroundImage: `radial-gradient(#e2e8f0 1px, transparent 1px)`, backgroundSize: '40px 40px' }}></div>
+<section className="relative py-24 bg-white overflow-hidden px-6 border-t border-slate-100">
+  {/* Subtler Background Grid */}
+  <div className="absolute inset-0 z-0 opacity-[0.03] pointer-events-none" 
+       style={{ backgroundImage: `radial-gradient(#0f172a 1px, transparent 1px)`, backgroundSize: '40px 40px' }}>
   </div>
 
-  <div className="relative z-10 max-w-6xl mx-auto text-center">
-    {/* Header Section */}
-    <h2 className="text-4xl md:text-[42px] font-bold tracking-tight text-[#0F172A] mb-4">
-      End-to-End Third-Party Risk Management
-    </h2>
+  <div className="relative z-10 max-w-7xl mx-auto text-center">
+    
+    {/* Refined Header - Proportional Sizing */}
+    <div className="max-w-4xl mx-auto mb-16">
+      <div className="inline-block px-3 py-1 mb-6 rounded-full bg-blue-50/80 border border-blue-100">
+        <p className="text-[10px] uppercase tracking-[0.2em] text-blue-600 font-bold">
+          Program Delivery
+        </p>
+      </div>
 
-    <p className="text-[18px] text-slate-500 max-w-3xl mx-auto mb-20 leading-relaxed font-light">
-      We help organizations <span className="font-semibold text-slate-700">design, scale, and operationalize</span> robust third-party risk programs aligned with regulatory expectations and enterprise best practices.
-    </p>
+      <h2 className="text-3xl md:text-5xl font-bold text-[#0F172A] leading-tight tracking-tight mb-6">
+        End-to-End <br />
+        <span className="text-blue-600">Third-Party Risk Management</span>
+      </h2>
 
-    {/* Grid with Custom Cards */}
-    <div className="grid md:grid-cols-2 gap-x-12 gap-y-6 text-left">
+      <p className="text-lg text-slate-500 leading-relaxed font-light max-w-2xl mx-auto">
+        We help organizations design, scale, and operationalize robust 
+        third-party risk programs aligned with regulatory expectations.
+      </p>
+    </div>
+
+    {/* Symmetrical Grid - Fixed Card Heights */}
+    <div className="grid md:grid-cols-2 gap-4 max-w-5xl mx-auto text-left">
       {[
         "Implement a World-Class TPRM Program",
         "Conduct Inherent Risk Assessments",
@@ -211,31 +220,22 @@ export default function App() {
       ].map((item, idx) => (
         <div
           key={idx}
-          className="group flex items-center justify-between bg-white/80 backdrop-blur-sm border border-white rounded-2xl p-2 pl-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_50px_rgba(59,130,246,0.1)] transition-all duration-500 cursor-pointer"
+          className="group flex items-center justify-between bg-[#F8FAFC] border border-slate-200/60 rounded-2xl p-4 pl-8 transition-all duration-300 hover:bg-white hover:shadow-xl hover:shadow-blue-500/5 hover:border-blue-200 cursor-pointer"
         >
-          <span className="text-[16px] font-semibold text-slate-700 group-hover:text-blue-600 transition-colors duration-300">
+          <span className="text-[15px] font-semibold text-slate-700 group-hover:text-blue-600 transition-colors">
             {item}
           </span>
           
-          {/* Action Button */}
-          <div className="flex items-center justify-center h-12 w-12 rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 shadow-lg shadow-blue-200 group-hover:scale-110 transition-transform duration-300">
-            <svg 
-              className="w-5 h-5 text-white" 
-              fill="none" 
-              viewBox="0 0 24 24" 
-              stroke="currentColor"
-            >
+          {/* Action Button - Scaled down for better proportion */}
+          <div className="flex items-center justify-center h-10 w-10 rounded-xl bg-blue-600 text-white shadow-lg shadow-blue-200 group-hover:scale-105 transition-transform">
+            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M14 5l7 7m0 0l-7 7m7-7H3" />
             </svg>
           </div>
         </div>
-      )
-      )
-      
-      }
+      ))}
     </div>
-  
-</div>
+  </div>
 </section>
 
      {/* TRUST SIGNALS - COMPLIANCE APPROACH */}
@@ -693,18 +693,59 @@ export default function App() {
 
 
 
-              {/* CTA */}
-              <section id="contact" className="py-24 px-6 bg-blue-600 text-white text-center">
-                <h2 className="text-[36px] font-semibold mb-6">
-                  Ready to Become Compliant?
-                </h2>
-                <p className="text-[18px] mb-8">
-                  Start your compliance journey with confidence.
-                </p>
-                <button className="bg-white text-blue-600 px-10 py-4 rounded-lg font-semibold">
-                  Schedule a Consultation
-                </button>
-              </section>
+              {/* CTA SECTION - FULL BRAND BLUE WITH BLACK BUTTON TEXT */}
+<section id="contact" className="relative py-32 px-6 overflow-hidden bg-blue-600">
+  
+  {/* Technical Background - White Grid on Blue */}
+  <div className="absolute inset-0 z-0 opacity-[0.1] pointer-events-none" 
+       style={{ backgroundImage: `radial-gradient(#fff 1px, transparent 1px)`, backgroundSize: '40px 40px' }} />
+
+  {/* Soft Light Overlays for Depth */}
+  <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-white/10 rounded-full blur-[120px] pointer-events-none" />
+  <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-indigo-400/20 rounded-full blur-[100px] pointer-events-none" />
+
+  <div className="relative z-10 max-w-7xl mx-auto text-center">
+    
+    {/* Glassmorphism Eyebrow Tag */}
+    <div className="inline-block px-4 py-1.5 mb-10 rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-inner">
+      <p className="text-[11px] uppercase tracking-[0.25em] text-white font-bold">
+        Secure Your Future
+      </p>
+    </div>
+
+    {/* Massive Bold Heading - Black & White Contrast */}
+    <div className="max-w-4xl mx-auto mb-10">
+      <h2 className="text-5xl md:text-8xl font-black text-black leading-[0.95] tracking-tighter">
+        Ready to Become <br />
+        <span className="text-white">Audit-Ready?</span>
+      </h2>
+    </div>
+
+    {/* Supporting Text */}
+    <p className="text-xl md:text-2xl text-blue-50 mb-14 max-w-2xl mx-auto font-light leading-relaxed">
+      Join the organizations that trust <span className="font-bold text-white">Renolsys</span> to navigate 
+      complex compliance landscapes with zero friction.
+    </p>
+
+    {/* Primary CTA Button - Updated with Black Text */}
+    <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+      <button className="group relative overflow-hidden bg-white text-[#0F172A] px-14 py-6 rounded-full font-extrabold text-lg transition-all hover:bg-blue-50 hover:shadow-[0_25px_60px_rgba(0,0,0,0.2)] active:scale-95">
+        <span className="relative z-10 uppercase tracking-wider">Schedule a Consultation</span>
+      </button>
+    </div>
+
+    {/* Trust Indicators */}
+    <div className="mt-20 flex flex-wrap items-center justify-center gap-x-12 gap-y-6 text-[11px] font-black text-blue-100 uppercase tracking-[0.3em]">
+      <div className="flex items-center gap-3">
+        <div className="w-2.5 h-2.5 rounded-full bg-green-400 shadow-[0_0_15px_rgba(74,222,128,0.5)]" />
+        Response within 24h
+      </div>
+      <div className="flex items-center gap-3">
+        <span className="text-white text-lg leading-none">✓</span> Certified Lead Auditors
+      </div>
+    </div>
+  </div>
+</section>
 
               {/* FOOTER */}
               <footer className="bg-gray-900 text-gray-400 py-10 text-center text-[14px]">
@@ -792,7 +833,7 @@ function Service({ icon, title }) {
       </p>
     </motion.div>
   );
-}
+} 
 
 
 function ProcessStep({ number, title, description }) {
